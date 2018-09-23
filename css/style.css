@@ -1,0 +1,61 @@
+/*
+* {
+    color: red;
+}*/
+
+div.uniwersalny {
+    color: blue;
+}
+
+/*pseudo elementy*/
+
+/*pseudoelement należy do elementu*/
+p::before {
+    content: '*';
+    /*    color: darkgoldenrod;*/
+}
+
+p::after {
+    content: '***'
+}
+
+a:hover {
+    color: orange;
+}
+
+input:focus {
+    background-color: chocolate;
+}
+
+/*
+ul li:first-child {
+    color: orange;
+}
+
+ul li:last-child {
+    color: orange;
+}
+
+ul li:first-of-type {
+    color: orange;
+}
+
+ul li:nth-of-type(even) {
+    color: darkcyan;
+}
+
+ul li:nth-of-type(4n + 1) {
+    color: mediumvioletred;
+}
+*/
+ul li:nth-last-of-type(even) {
+    color: darkcyan;
+}
+
+ul li:nth-of-type(even) {
+    color: red;
+}
+
+input[title] {
+    border: 2px solid black;
+}
