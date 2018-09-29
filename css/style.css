@@ -1,7 +1,7 @@
-/*
 * {
-    color: red;
-}*/
+    box-sizing: border-box;
+    /*    domyślnie jest content-box*/
+}
 
 div.uniwersalny {
     color: blue;
@@ -142,4 +142,36 @@ input[title*='o'] {
 
 #vh {
     height: 10vh;
+}
+
+.wyswietlanie .w-inner {
+    display: inline-block;
+    background-color: violet;
+    height: 300px;
+    width: 32%;
+    float: left;
+    /*
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+*/
+    /*    transition-delay: 0.5s;*/
+    transition: width .5s ease-in;
+}
+
+.wyswietlanie .w-inner:hover {
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.background {
+    height: 500px;
+    background-image: url('https://cdn.newsapi.com.au/image/v1/f3482f5b0acf54850cb72badd4e0116f?width=650');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }

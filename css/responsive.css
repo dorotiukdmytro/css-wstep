@@ -1,0 +1,11 @@
+@media all and (max-width: 1200px) {}
+
+@media all and (max-width: 992px) {}
+
+@media all and (max-width: 768px) {}
+
+@media all and (max-width: 480px) {
+    .background {
+        background-image: url("https://www.express.pl/uploads/OpelAstra_V03_20160323.jpg");
+        ;
+    }
