@@ -175,3 +175,88 @@ input[title*='o'] {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.transform > img {
+    transition: all .4s;
+}
+
+.transform > img:hover {
+    /*    transform: rotate(720deg);*/
+}
+
+.centrowanie {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+}
+
+.centrowanie-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+}
+
+.transform-2 {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.transform-2 > img {
+    transition: .3s;
+    /*    animation-name: skalowanie;*/
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+/*
+.transform-2 > img:hover {
+    transform: scale(1.2);
+}
+*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    background-color: black;
+}
+
+.flex-container-inner {
+    flex-basis: 10%;
+    height: 100px;
+    background-color: royalblue;
+}
+
+.flex-container-inner:first-of-type {
+    align-self: flex-start;
+}
+
+.flex-container-inner:nth-of-type(2) {
+    order: 4;
+}
+
+.flex-container-inner:nth-of-type(3) {
+    order: 3
+}
+
+@keyframes skalowanie {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2)
+    }
+
+}
